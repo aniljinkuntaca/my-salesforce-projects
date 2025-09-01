@@ -68,6 +68,14 @@ export default class CaseDashboard extends LightningElement {
         this.updatePagedData();
     }
 
+     clearFilters() {
+        this.searchKeyword = '';
+        this.selectedCategory = '';
+        this.confidenceFilter = 0;
+        this.currentPage = 1;
+        this.applyFilters();
+    }
+
     handleSort(event) {
         const { fieldName, sortDirection } = event.detail;
         this.sortedBy = fieldName;
