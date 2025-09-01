@@ -72,3 +72,4 @@ The AI Case Dashboard is a Salesforce Lightning Web Component (LWC) project that
 I wanted to keep my hands dirty with Salesforce and also have a neat portfolio of projects that show what I can build — from Apex utilities to full dashboards.
 
 💡 If you’re a fellow dev or recruiter checking this out — welcome! Feedback and ideas are always appreciated 😄
+
