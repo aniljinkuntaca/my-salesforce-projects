@@ -23,7 +23,7 @@ A Lightning Web Component + Apex powered dashboard that:
 - Lets you filter, sort, and paginate cases  
 - Supports inline edits and exporting data  
 
-👉 [Check the code here](./ai-case-dashboard)
+👉 [Check the code here](https://github.com/aniljinkuntaca/my-salesforce-projects/tree/ai-case-dashboard)
 
 ---
 
