@@ -46,13 +46,10 @@ A Lightning Web Component + Apex powered dashboard that:
 3. Authorize your Salesforce org:  
    ```sh
    sfdx auth:web:login -a myOrg
-Push the code:
-
-sh
-Copy
-Edit
-sfdx force:source:push -u myOrg
-Assign any needed permission sets and you’re good to go 🚀
+4. Push the code:
+   ```sh
+   sfdx force:source:push -u myOrg
+5.Assign any needed permission sets and you’re good to go 🚀
 
 ✨ Why This Repo?
 I wanted to keep my hands dirty with Salesforce and also have a neat portfolio of projects that show what I can build — from Apex utilities to full dashboards.
