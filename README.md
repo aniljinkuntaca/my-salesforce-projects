@@ -38,6 +38,8 @@ The AI Case Dashboard is a Salesforce Lightning Web Component (LWC) project that
    - **Case Flagging**: Flag problematic cases for follow-up.
    
    - **CSV Export**: Download the current filtered case list for reporting or analysis.
+     
+   - **Clear Filter**: Resets all the filters
 
 👉 [Check the code here](https://github.com/aniljinkuntaca/my-salesforce-projects/tree/ai-case-dashboard)
 
