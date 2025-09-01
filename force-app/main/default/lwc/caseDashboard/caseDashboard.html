@@ -1,0 +1,41 @@
+<template>
+    <lightning-card title="AI Case Classification Dashboard">
+        <!-- Filters -->
+        <div class="slds-p-around_small slds-grid slds-wrap slds-gutters">
+            <div class="slds-col slds-size_1-of-1 slds-medium-size_1-of-3">
+                <lightning-input label="Search Subject" placeholder="Type..." value={searchKeyword} onchange={handleSearch}></lightning-input>
+            </div>
+            <div class="slds-col slds-size_1-of-1 slds-medium-size_1-of-3">
+                <lightning-combobox label="Filter by Category" value={selectedCategory} options={categoryOptions} onchange={handleCategoryChange}></lightning-combobox>
+            </div>
+            <div class="slds-col slds-size_1-of-1 slds-medium-size_1-of-3">
+                <lightning-slider label="Minimum Confidence %" value={confidenceFilter} min="0" max="100" step="1" onchange={handleConfidenceChange}></lightning-slider>
+            </div>
+           
+        </div>
+
+        <!-- Table -->
+        <div class="slds-m-top_small">
+          <lightning-datatable
+    key-field="Id"
+    data={pagedCases}
+    columns={columns}
+    onsort={handleSort}
+    sorted-by={sortedBy}
+    sorted-direction={sortedDirection}
+    onrowaction={handleRowAction}
+    draft-values={draftValues}  
+    oncellchange={handleSave}   
+    hide-checkbox-column>
+</lightning-datatable>
+        </div>
+
+        <!-- Pagination -->
+      <div class="slds-m-around_small slds-text-align_center slds-grid slds-align-middle slds-justify_center slds-gutters">
+    <lightning-button label="Previous" onclick={previousPage} disabled={isPreviousDisabled}></lightning-button>
+    <span class="slds-p-horizontal_small">Page {currentPage} of {totalPages}</span>
+    <lightning-button label="Next" onclick={nextPage} disabled={isNextDisabled}></lightning-button>
+</div>
+
+    </lightning-card>
+</template>
