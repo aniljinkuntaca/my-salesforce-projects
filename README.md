@@ -41,7 +41,8 @@ The AI Case Dashboard is a Salesforce Lightning Web Component (LWC) project that
 
 👉 [Check the code here](https://github.com/aniljinkuntaca/my-salesforce-projects/tree/ai-case-dashboard)
 
----
+📸 [Check the Screenshots here](https://github.com/aniljinkuntaca/my-salesforce-projects/blob/ai-case-dashboard/Screenshots.pdf)
+
 
 ### 2. *(coming soon 🚧)* 
 
